@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Personal homepage"
+title                    : "Zhiyu's Personal homepage"
 title_separator          : "-"
 name                     : &name "Zhiyu Cao"
 description              : &description "Postdoc fellow at CTBP of Rice"
