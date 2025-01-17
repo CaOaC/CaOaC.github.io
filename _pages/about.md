@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I’m Zhiyu Cao. I’m cur­rently a post­doc­toral fel­low work­ing with Dr. Peter G. Wolynes at the Center for Theoretical Biological Physics (CTBP) of Rice University. My interests lie in developing statistical mechanics-based theories to study non-equilibrium processes in biology, chemistry, and physics, focusing on the latest advancements in polymer theory and soft condensed matter physics. A recent topic focuses on motorized-driven chromosome self-organization and dynamics, where motors consume ATP to drive the system out of equilibrium. Other areas of my research are the glass transition and the non-equilibrium thermodynamics of these mesoscopic systems.
 
 A data-driven personal website
 ======
