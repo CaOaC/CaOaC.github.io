@@ -1,13 +1,10 @@
 ---
-title: "Paper Title Number 4"
+title: "Improved estimation for energy dissipation in biochemical oscillations"
 collection: publications
-category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+category: manuscripts
+permalink: /publication/2022-07-14-improved-estimation-for
+date: 2022-07-14
+venue: "J. Chem. Phys."
+paperurl: "https://doi.org/10.1063/5.0092126"
+citation: "Zhiyu Cao; Zhonghuai Hou. Improved estimation for energy dissipation in biochemical oscillations. <i>Phys. Fluids</i> 2022, 157, 025102. DOI: 10.1063/5.0092126."
 ---
-
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
