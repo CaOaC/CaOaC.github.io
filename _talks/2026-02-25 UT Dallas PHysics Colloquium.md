@@ -7,5 +7,3 @@ venue: "UT Dallas, Department of Physics"
 date: 2012-03-01
 location: "Dallas, TX, USA"
 ---
-
-This is a description of your talk, which is a markdown file that can be all markdown-ified like any other post. Yay markdown!
