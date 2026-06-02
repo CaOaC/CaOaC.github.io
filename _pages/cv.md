@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D in University of Science and Technology of China, Chemical Physics, 2018
+* Ph.D in University of Science and Technology of China, Chemical Physics, 2018 (Advisor: Zhonghuai Hou)
 * B.S. in University of Science and Technology of China, Chemical Physics, 2014
 
 Work experience
