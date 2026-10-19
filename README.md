@@ -1,3 +1,38 @@
+# Zhiyu Cao's academic homepage
+
+This repository publishes https://caoac.github.io using Jekyll and Academic Pages.
+
+## Maintaining this site
+
+- Biography: `_pages/about.md`; sidebar/contact details: `_config.yml`.
+- CV: `_pages/cv.md`; navigation: `_data/navigation.yml`.
+- Publications: add a Markdown file in `_publications/` with `title`, `collection: publications`, `category: manuscripts`, `date`, `venue`, `paperurl`, and `citation`. Preserve existing permalinks when editing an entry.
+- Talks: add a Markdown file in `_talks/` with `title`, `collection: talks`, `type`, `date`, `venue`, and `location`.
+- Template examples remain in the repository but are excluded from the public build in `_config.yml`. Remove the relevant exclusions only when replacing them with real content. Teaching appears in the CV once entries exist. The blog feed is hidden while no posts are published.
+- `url` must be the origin without a trailing slash; `repository` uses `owner/repository` format.
+
+Use a maintained Ruby installation (verified with Ruby 3.4 and GitHub Pages' Jekyll 3.10), Bundler, and Python 3:
+
+```sh
+bundle install
+bundle exec jekyll build --safe
+python3 scripts/check_site.py _site
+bundle exec jekyll serve --host 127.0.0.1
+```
+
+The checker validates internal links, anchors, CSS assets, icon references, and sitemap targets. It does not contact external sites. For a preview with an overridden URL, pass `--base-url http://127.0.0.1:4000`.
+
+After changing JavaScript source files, regenerate the committed bundle:
+
+```sh
+npm install
+npm run build:js
+```
+
+The old talk-map automation under `.github/    workflows  /` is an inactive template example: GitHub does not load workflows from that directory. The talk map is currently disabled; do not enable the sample automation without adapting it to the site's actual needs.
+
+---
+
 # Academic Pages
 **Academic Pages is a Github Pages template for academic websites.**
 

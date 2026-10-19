@@ -53,6 +53,17 @@
 
   &--lg {
     padding-right: 2em;
+
+    @media (max-width: 480px) {
+      padding-right: 0.5em;
+
+      a {
+        max-width: calc(100vw - 6rem);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
     font-weight: 700;
   }
 }

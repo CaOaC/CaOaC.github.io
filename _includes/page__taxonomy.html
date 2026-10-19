@@ -4,6 +4,11 @@
   {% include tag-list.html %}
 {% endif %}
 
-{% if site.category_archive.type and page.categories[0] %}
+{% if page.collection == 'publications' and site.publication_category[page.category] %}
+  <p class="page__taxonomy">
+    <strong>Category:</strong>
+    <a href="{{ '/publications/' | relative_url }}#{{ page.category | slugify }}" class="page__taxonomy-item" rel="tag">{{ site.publication_category[page.category].title }}</a>
+  </p>
+{% elsif site.category_archive.type and page.categories[0] %}
   {% include category-list.html %}
 {% endif %}

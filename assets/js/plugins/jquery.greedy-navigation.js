@@ -17,7 +17,7 @@ function updateNav() {
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
   // The visible list is overflowing the nav
-  if($vlinks.width() > availableSpace) {
+  if($vlinks.width() > availableSpace && $vlinks.children('*:not(.masthead__menu-item--lg)').length > 0) {
 
     // Record the width of the list
     breaks.push($vlinks.width());
@@ -45,6 +45,7 @@ function updateNav() {
     if(breaks.length < 1) {
       $btn.addClass('hidden');
       $hlinks.addClass('hidden');
+      $btn.removeClass('close').attr('aria-expanded', 'false');
     }
   }
 
@@ -52,7 +53,7 @@ function updateNav() {
   $btn.attr("count", breaks.length);
 
   // Recur if the visible list is still overflowing the nav
-  if($vlinks.width() > availableSpace) {
+  if($vlinks.width() > availableSpace && $vlinks.children('*:not(.masthead__menu-item--lg)').length > 0) {
     updateNav();
   }
 
@@ -66,7 +67,14 @@ $(window).resize(function() {
 
 $btn.on('click', function() {
   $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
+  $(this).toggleClass('close').attr('aria-expanded', !$hlinks.hasClass('hidden'));
+});
+
+$nav.on('keydown', function(event) {
+  if (event.key === 'Escape' && !$hlinks.hasClass('hidden')) {
+    $hlinks.addClass('hidden');
+    $btn.removeClass('close').attr('aria-expanded', 'false').trigger('focus');
+  }
 });
 
 updateNav();

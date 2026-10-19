@@ -12,9 +12,9 @@ title                    : "Zhiyu's Personal homepage"
 title_separator          : "-"
 name                     : &name "Zhiyu Cao"
 description              : &description "Postdoc fellow at CTBP of Rice"
-url                      : https://caoac.github.io/
+url                      : https://caoac.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "caoac.github.io/"
+repository               : "CaOaC/CaOaC.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -116,7 +116,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # No blog posts are currently published
   path                   : # blank (default) uses feed.xml
 
 
@@ -156,6 +156,27 @@ include:
   - _pages
   - files
 exclude:
+  # Unused template examples and development tools (kept in the repository).
+  - _posts
+  - _portfolio
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/teaching.html
+  - _pages/terms.md
+  - _pages/year-archive.html
+  - CONTRIBUTING.md
+  - markdown_generator
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - scripts
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
