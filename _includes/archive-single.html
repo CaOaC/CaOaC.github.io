@@ -66,5 +66,9 @@
       <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% endif %}
 
+    {% if post.commentary_citation %}
+      <p><strong>Commentary:</strong> {{ post.commentary_citation }}{% if post.commentary_url %}<br /><a href="{{ post.commentary_url }}">View commentary</a>{% endif %}</p>
+    {% endif %}
+
   </article>
 </div>

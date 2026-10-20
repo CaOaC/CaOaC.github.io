@@ -59,6 +59,10 @@ layout: default
           <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
         {% endif %}
 
+        {% if page.commentary_citation %}
+          <p style="font-size: smaller"><strong>Commentary:</strong> {{ page.commentary_citation }}{% if page.commentary_url %}<br /><a href="{{ page.commentary_url }}">View commentary</a>{% endif %}</p>
+        {% endif %}
+
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
